@@ -27,7 +27,7 @@ var downloadButton = "<button class=\"gaysonicdownloadbutton\">Download</button>
                );
     $(".title").after(downloadButton);
     $(".gaysonicdownloadbutton").click(function(){
-        var download_title = $(".title").html().replace("&amp;", ",");
+        var download_title = $(".title").html().replace("&amp;", ",").replace(":", ",");
         var download_content=$('.entry').text();
         var download_images0=$('.entry img')[0].src;
         var download_images1=$('.entry img')[1].src;
